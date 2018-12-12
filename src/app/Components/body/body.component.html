@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div *ngFor="let item of data">
+      <label>{{ item.id }}</label> <br /><label>{{ item.first_name }}</label>
+      <label>{{ item.last_name }}</label> <br /><img [src]="item.avatar" />
+    </div>
+  </body>
+</html>
