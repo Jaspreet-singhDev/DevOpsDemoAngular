@@ -9,6 +9,7 @@ import { ErrorComponent } from "./Components/error/error.component";
 import { HeaderComponent } from "./Components/header/header.component";
 import { FooterComponent } from "./Components/footer/footer.component";
 import { BodyComponent } from "./Components/body/body.component";
+import { SubbodyComponent } from './body/subbody/subbody.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BodyComponent } from "./Components/body/body.component";
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent
+    BodyComponent,
+    SubbodyComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

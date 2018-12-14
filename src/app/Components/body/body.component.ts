@@ -9,14 +9,18 @@ import { Idata } from "src/app/Components/model";
 })
 export class BodyComponent implements OnInit {
   data: Idata[] = [];
+
+  name: string;
+
+  tempVar: string = "Parent new Button";
   constructor(private _service: ApiServiceService) {}
 
   ngOnInit() {
     this._service
       .getData()
 
-      .then(res => {
-        console.log(res.data);
+      .then((res: any) => {
+        //console.log(res.data);
         // res.map(r => {
         //   this.data = r.data;
         // });
@@ -26,5 +30,9 @@ export class BodyComponent implements OnInit {
         //console.log(this.data);
       })
       .catch(err => console.log(err));
+  }
+
+  gotoutput(event) {
+    this.name = event;
   }
 }

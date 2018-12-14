@@ -11,5 +11,10 @@
       <label>{{ item.id }}</label> <br /><label>{{ item.first_name }}</label>
       <label>{{ item.last_name }}</label> <br /><img [src]="item.avatar" />
     </div>
+    <label>name :</label> <label>{{ name }}</label>
+    <app-subbody
+      [childName]="tempVar"
+      (changename)="gotoutput($event)"
+    ></app-subbody>
   </body>
 </html>
