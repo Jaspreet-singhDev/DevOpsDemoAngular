@@ -19,12 +19,25 @@ export class SubbodyComponent implements OnInit, AfterViewInit {
   @Input("childName") name;
   @Output() changename: EventEmitter<string> = new EventEmitter<string>();
 
+  data: string[] = ["abc,xyz,def"];
+
+  global: string;
   constructor() {}
 
   ngOnInit() {
-    console.log(this.name);
+    let xyz = "xyz";
+    console.log(this.global, xyz);
   }
-  ngAfterViewInit() {}
+
+  addstring(firststring: string): string {
+    return firststring;
+  }
+
+  ngAfterViewInit() {
+    //console.log(this.multiply({}, 4));
+    // let xyz = "abc";
+    // console.log(this.name, xyz);
+  }
 
   Click() {
     this.changename.emit("my new name");

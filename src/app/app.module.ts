@@ -10,6 +10,7 @@ import { HeaderComponent } from "./Components/header/header.component";
 import { FooterComponent } from "./Components/footer/footer.component";
 import { BodyComponent } from "./Components/body/body.component";
 import { SubbodyComponent } from './body/subbody/subbody.component';
+import { DividePipePipe } from './Pipes/divide-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SubbodyComponent } from './body/subbody/subbody.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    SubbodyComponent
+    SubbodyComponent,
+    DividePipePipe
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
